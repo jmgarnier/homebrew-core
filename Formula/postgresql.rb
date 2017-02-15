@@ -113,7 +113,7 @@ class Postgresql < Formula
     SUPERUSER INHERIT CREATEDB CREATEROLE REPLICATION;
     \q
     ```
-    
+
     To migrate existing data from a previous major version (pre-9.0) of PostgreSQL, see:
       https://www.postgresql.org/docs/9.6/static/upgrading.html
 
