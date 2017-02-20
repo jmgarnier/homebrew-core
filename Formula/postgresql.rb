@@ -107,12 +107,7 @@ class Postgresql < Formula
       https://github.com/Homebrew/homebrew/issues/2510
 
     For a fresh install, you need to setup the postgres role:
-    ```
-    psql template1
-    CREATE ROLE postgres LOGIN
-    SUPERUSER INHERIT CREATEDB CREATEROLE REPLICATION;
-    \q
-    ```
+      createuser --superuser --createrole postgres
 
     To migrate existing data from a previous major version (pre-9.0) of PostgreSQL, see:
       https://www.postgresql.org/docs/9.6/static/upgrading.html
